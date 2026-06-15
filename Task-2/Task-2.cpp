@@ -21,8 +21,8 @@ int main() {
     int n, m;
     if(!(cin >> n >> m)) return 0;
     
-    G.resize(n +1);
-    visited.resize(n +1, false);
+    G.resize(n + 1);
+    visited.resize(n + 1, false);
 
     for (int i = 0; i < m; ++i) {
         int u, v;
@@ -40,9 +40,10 @@ int main() {
     }
 
     if (K_count > 0) {
-        cout << K_count -1 << "\n";
+        cout << K_count - 1 << "\n";
     } else {
         cout << 0 << "\n";
     }
+    cout << endl;
     return 0;
 }
